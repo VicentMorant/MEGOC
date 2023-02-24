@@ -51,7 +51,7 @@ header div#titulo{
     justify-content: space-around;
     align-items: center;
 }
-header div#titulo h1{
+header div#titulo h1{    
     font-size: 1.5rem;
     text-decoration: underline;
 }
@@ -112,6 +112,9 @@ main {
 }
 
 @media (max-width: 450px){
+    header div#titulo h1{    
+        display: none;
+    }
     nav strong{
       display: none;
     }
