@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página oficial de Megòc, un coro de gospel y música moderna en Oliva, Valencia">
+    <title>Contacta</title>
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/styles-contacta.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="../js/script.js"></script>
+</head>
+<body>
+
+    <header>
+        <div id="logo"><img src="../img/logoMegoc.svg"  alt="logo" ></div>
+        <div id="titulo">
+            <h1>MEGÒC</h1>
+            <div id="redes">
+                <div> 
+                    <a href="https://www.facebook.com/ModernEspaiGospelCor/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="mailto:modernespaigospelcor@hotmail.com"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+               <div>
+                    <a href="https://www.youtube.com/@modernespaigospelcor-megoc9290" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/modernespaigospelcor/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+               </div>
+            </div>
+        </div>
+        <div id="idiomas-menu">
+            <div id="idiomas"><i class="fa-solid fa-globe"></i></div>
+            <div id="menu"><i class="fa-solid fa-bars"></i></div>    
+        </div>
+    </header>
+    
+    <nav id="navegador">
+        <a href="./quienesSomos.html">
+            <i class="fa-solid fa-house"></i>
+            <strong>¿Quienes somos?</strong>
+        </a>
+        <a href="./historia.html">
+            <i class="fa-solid fa-book-open"></i>
+            <strong>Historia</strong>
+        </a>
+        <a href="./noticias.html">
+            <i class="fa-solid fa-newspaper"></i>
+            <strong>Noticias</strong>
+        </a>
+        <a href="#">
+            <i class="fa-solid fa-phone"></i>
+            <strong style="text-decoration:underline;">Contacta</strong>
+        </a>
+    </nav>
+
+    <main>
+        <div id="direccion">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6207.962679455905!2d-0.121275!3d38.924404!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd61e667fd27363d%3A0xa830a8528626fc7e!2sCasa%20de%20la%20Fiesta!5e0!3m2!1ses!2ses!4v1676284150098!5m2!1ses!2ses" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div>
+                <p><strong>TLF: </strong>+34 630 87 77 25</p>
+                <a href="mailto:modernespaigospelcor@hotmail.com"><strong>MAIL: </strong>modernespaigospelcor</a>
+                <p><strong>HORARIO: </strong> Martes y Viernes 20:00 - 22:00</p>
+            </div>
+        </div>
+        <br>
+        <h2>Hablanos de tí</h2>
+        <form action="#">
+            <label for="nombre">Nombre: </label><br>
+            <input type="text" id="nombre">
+            <br><br>
+            <label for="apellido">Apellidos: </label><br>
+            <input type="text" id="apellido">
+            <br><br>
+            <label for="correo">Correo: </label><br>
+            <input type="email" id="correo">
+            <br><br>
+            <label for="gusto">Gustos Musicales: </label><br>
+            <input type="text" list="gustos" id="gusto">
+            <datalist id="gustos">
+                <option value="ROCK">
+                <option value="POP">
+                <option value="CLASICO">
+                <option value="OTROS">
+            </datalist>
+            <br><br>
+            <label for="ciudad">Ciudad: </label><br>
+            <input type="text" id="ciudad">
+            <br><br>
+            <label>Hablanos de ti:</label><br>
+            <textarea id="sobreti" cols="50" rows="12"></textarea>
+            <div id="submit">
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
+            </div>
+        </form>
+
+    </main>
+
+    <footer>
+        <div><img src="../img/foto.png" alt="fotoMegoc"></div>
+        <div>
+            <p><strong>Encuentranos en:</strong></p>
+            <p>Oliva, Casal de la Festa</p>
+            <p>Tlf: +34 630 87 77 25</p>
+            <p><a href="mailto:modernespaigospelcor@hotmail.com">Mail: modernespaigospelcor</a></p>
+        </div>
+        <div>
+            <p><strong>Políticas:</strong></p>
+            <ul>
+                <li><a href="#">- Política de protección de datos</a></li>
+                <li><a href="#">- Políticade cookies</a></li>
+            </ul>
+         </div>
+    </footer>
+
+    <aside id="cookies">
+        <p>Recojemos datos personales</p> 
+        <p><button onclick="cerrarCookies()">Aceptar</button></p>
+     </aside>
+
+</body>
+<script src="../js/script.js"></script>
+</html>
